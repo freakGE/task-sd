@@ -60,7 +60,7 @@ const UserDetails = () => {
     <div className="relative flex w-screen justify-center">
       <Link
         to="/"
-        className="absolute left-0 ml-[1rem] mt-[1rem] animate-[slide-in_0.6s_ease-in-out_forwards] duration-300 hover:text-highlight-cyan active:scale-90"
+        className="fixed left-0 ml-[1rem] mt-[1rem] animate-[slide-in_0.6s_ease-in-out_forwards] duration-300 hover:text-highlight-cyan active:scale-90"
       >
         <Arrow />
       </Link>

@@ -2,13 +2,19 @@ import React from "react";
 
 type ArrowProps = {
   up?: boolean;
+  notFound?: boolean;
 };
-const Arrow = ({ up }: ArrowProps) => {
+const Arrow = ({ up, notFound }: ArrowProps) => {
   return (
     <svg
       className={`h-[3rem] w-[3rem] lg:h-[3.5rem] lg:w-[3.5rem] ${
         !!up && "rotate-90"
-      }`}
+      }
+      ${
+        !!notFound &&
+        "sm:h-[3.5rem] sm:w-[3.5rem] 2md:h-[3.75rem] 2md:w-[3.75rem] lg:h-[4rem] lg:w-[4rem]"
+      }
+      `}
       stroke="currentColor"
       fill="currentColor"
       strokeWidth="0"
